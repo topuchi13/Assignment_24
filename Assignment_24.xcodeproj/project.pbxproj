@@ -13,6 +13,9 @@
 		0DE431FD2742ADE500592A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE431FB2742ADE500592A19 /* Main.storyboard */; };
 		0DE431FF2742ADE500592A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE431FE2742ADE500592A19 /* Assets.xcassets */; };
 		0DE432022742ADE500592A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE432002742ADE500592A19 /* LaunchScreen.storyboard */; };
+		0DE4320C2742B1BE00592A19 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE4320B2742B1BE00592A19 /* QuizBrain.swift */; };
+		0DE432132742C32300592A19 /* QuizApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE432122742C32300592A19 /* QuizApiManager.swift */; };
+		0DE432152742E0D200592A19 /* QuizItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE432142742E0D200592A19 /* QuizItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0DE431FE2742ADE500592A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DE432012742ADE500592A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DE432032742ADE500592A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE4320B2742B1BE00592A19 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		0DE432122742C32300592A19 /* QuizApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizApiManager.swift; sourceTree = "<group>"; };
+		0DE432142742E0D200592A19 /* QuizItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		0DE431F42742ADE500592A19 /* Assignment_24 */ = {
 			isa = PBXGroup;
 			children = (
+				0DE432092742ADFA00592A19 /* Model */,
+				0DE432112742BFD800592A19 /* Resources */,
+				0DE4320F2742BFA500592A19 /* Presenter */,
+				0DE4320A2742AFEB00592A19 /* Support */,
 				0DE431F52742ADE500592A19 /* AppDelegate.swift */,
 				0DE431F72742ADE500592A19 /* SceneDelegate.swift */,
-				0DE431F92742ADE500592A19 /* ViewController.swift */,
-				0DE431FB2742ADE500592A19 /* Main.storyboard */,
-				0DE431FE2742ADE500592A19 /* Assets.xcassets */,
+			);
+			path = Assignment_24;
+			sourceTree = "<group>";
+		};
+		0DE432092742ADFA00592A19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DE4320B2742B1BE00592A19 /* QuizBrain.swift */,
+				0DE432122742C32300592A19 /* QuizApiManager.swift */,
+				0DE432142742E0D200592A19 /* QuizItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DE4320A2742AFEB00592A19 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				0DE432002742ADE500592A19 /* LaunchScreen.storyboard */,
 				0DE432032742ADE500592A19 /* Info.plist */,
 			);
-			path = Assignment_24;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0DE4320F2742BFA500592A19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0DE432102742BFB300592A19 /* Main */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0DE432102742BFB300592A19 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0DE431F92742ADE500592A19 /* ViewController.swift */,
+				0DE431FB2742ADE500592A19 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0DE432112742BFD800592A19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DE431FE2742ADE500592A19 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +189,10 @@
 			files = (
 				0DE431FA2742ADE500592A19 /* ViewController.swift in Sources */,
 				0DE431F62742ADE500592A19 /* AppDelegate.swift in Sources */,
+				0DE432152742E0D200592A19 /* QuizItem.swift in Sources */,
 				0DE431F82742ADE500592A19 /* SceneDelegate.swift in Sources */,
+				0DE432132742C32300592A19 /* QuizApiManager.swift in Sources */,
+				0DE4320C2742B1BE00592A19 /* QuizBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68B2VR2Z5P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Assignment_24/Info.plist;
+				INFOPLIST_FILE = Assignment_24/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +371,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68B2VR2Z5P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Assignment_24/Info.plist;
+				INFOPLIST_FILE = Assignment_24/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
