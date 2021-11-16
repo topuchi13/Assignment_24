@@ -48,15 +48,14 @@ class QuizBrain {
     }
     
     //Moves through the quesstions
-    func goToNextQuestion() {
+    func goToNextQuestion() -> Bool {
         if  currentQuestion < questions.count-1 {        //Checks if current Question is the last one
             currentQuestion += 1        //if not, goes to next question
+            return true
         }
         
         else {
-            currentQuestion = 0
-            progress = 0.0
-            score = 0
+            return false
         }
     }
 }

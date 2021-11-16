@@ -34,4 +34,8 @@ class QuizApiManager {
         }
         return questions
     }
+    
+    func urlConstructor(with quantity: Int) -> String{
+        return ("https://opentdb.com/api.php?amount=\(quantity)&category=18&difficulty=medium&type=multiple")
+    }
 }
